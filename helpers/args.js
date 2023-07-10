@@ -15,5 +15,4 @@ const parseArgs = (args) => {
     return res;
 };
 
-
 export { parseArgs }

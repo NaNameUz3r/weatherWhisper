@@ -1,0 +1,25 @@
+{
+  "name": "weather-whisper",
+  "private": false,
+  "version": "0.0.1",
+  "description": "Simple cli weather app, I'we code to get started with NodeJS development ",
+  "main": "index.js",
+  "bin": "./index.hs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NaNameUz3r/weatherWhisper.git"
+  },
+  "keywords": [
+    "cli",
+    "weather"
+  ],
+  "author": "uz3rn0x41m3",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NaNameUz3r/weatherWhisper/issues"
+  },
+  "homepage": "https://github.com/NaNameUz3r/weatherWhisper#readme"
+}

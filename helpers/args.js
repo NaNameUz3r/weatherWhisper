@@ -1,18 +1,19 @@
 const parseArgs = (args) => {
-    const res = {};
+    const parsedArguments = {};
     const [executer, file, ...rest] = args;
-    rest.forEach((value, index, array) => {
-       if (value.charAt(0) == '-') {
-            if (index == array.length - 1) {
-                res[value.substring(1)] = true;
-            } else if (array[index + 1].charAt[0] != '-') {
-                res[value.substring(1)] = array[index + 1];
+    rest.forEach((element, index, arr) => {
+       if(element.charAt(0) == '-') {
+            if (index == arr.length - 1) {
+                parsedArguments[element.substring(1)] = true;
+            } else if (arr[index + 1].charAt(0) != '-') {
+                parsedArguments[element.substring(1)] = arr[index + 1];
             } else {
-                res[value.substring(1)] = true;
+                parsedArguments[element.substring(1)] = true;
             }
        }
     });
-    return res;
+    return parsedArguments;
 };
+
 
 export { parseArgs }
